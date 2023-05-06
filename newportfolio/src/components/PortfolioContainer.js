@@ -6,6 +6,9 @@ import Navbar from './Navbar';
 import Home from './pages/Home';
 
 export default function PortfolioContainer () {
+
+  
+
     const [currentPage, setPage] = useState('Home');
 
     const renderPage = () => {

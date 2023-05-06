@@ -1,10 +1,18 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container'
 
 export default function Footer () {
+    const styles = {
+        footer: {
+            textAlign: 'center'
+        }
+    }
     return (
-        <div>
-            FOOTER
-            {/* Footer code below */}
-        </div>
-    )
+      <Container>
+        <footer style={styles.footer}>
+          FOOTER
+          {/* Footer code below */}
+        </footer>
+      </Container>
+    );
 }

@@ -6,10 +6,18 @@ import Nav from 'react-bootstrap/Nav';
 
 
 function NavTabs ({currentPage, handlePageChange}) {
+
+  const styles = {
+    navTabs: {
+      fontSize: 30,
+    },
+   
+  }
+
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar style={styles.navbar} bg="darkgrey" expand="lg">
         <Container>
-          <Nav className="me-auto">
+          <Nav style={styles.navTabs} className="m-auto">
             <Nav.Link
               onClick={() => handlePageChange("Home")}
               className={

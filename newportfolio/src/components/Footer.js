@@ -9,8 +9,8 @@ export default function Footer () {
     }
     return (
       <Container>
-        <footer style={styles.footer}>
-          FOOTER
+        <footer className='sticky-0' style={styles.footer}>
+          
           {/* Footer code below */}
         </footer>
       </Container>

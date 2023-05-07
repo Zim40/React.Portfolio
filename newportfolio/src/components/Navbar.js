@@ -12,10 +12,11 @@ function NavTabs ({currentPage, handlePageChange}) {
       fontSize: 30,
     },
    
+   
   }
 
     return (
-      <Navbar style={styles.navbar} bg="darkgrey" expand="lg">
+      <Navbar  className="sticky-top" bg="darkgrey" expand="lg">
         <Container>
           <Nav style={styles.navTabs} className="m-auto">
             <Nav.Link

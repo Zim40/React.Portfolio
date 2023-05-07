@@ -13,24 +13,30 @@ export default function ContactForm () {
         },
         button: {
             float: 'right'
+        },
+        title: {
+          textAlign: 'center',
+          paddingTop: 100,
+          fontSize: 30
         }
     }
     
 
     return (
       <Container>
+        <h3 style={styles.title}>Contact!</h3>
         <Form className="m-auto" style={styles.formSpec}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>First Name</Form.Label>
-            <Form.Control type="email" placeholder="..." />
+            <Form.Control type="Fname" placeholder="Firstname" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Last Name</Form.Label>
-            <Form.Control type="email" placeholder="..." />
+            <Form.Control type="Lname" placeholder="Lastname" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="..." />
+            <Form.Control type="email" placeholder="Email" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>

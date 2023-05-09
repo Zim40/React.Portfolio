@@ -4,7 +4,9 @@ import Container from 'react-bootstrap/Container'
 export default function Footer () {
     const styles = {
         footer: {
-            textAlign: 'center'
+            // position: 'absolute',
+            bottom: 0, 
+            background: 'grey'
         }
     }
     return (
@@ -12,6 +14,7 @@ export default function Footer () {
         <footer className='sticky-0' style={styles.footer}>
           
           {/* Footer code below */}
+         
         </footer>
       </Container>
     );

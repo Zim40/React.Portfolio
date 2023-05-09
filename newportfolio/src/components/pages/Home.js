@@ -8,14 +8,29 @@ export default function Home () {
         text: {
             textAlign: 'center',
             fontSize: 20,
+            padding:20
         },
         title: {
-            paddingTop: 150,
+            paddingTop: 100,
+            
             textAlign: 'center',
-            fontSize: 30
+            fontSize: 30,
+            borderBottom: 'solid'
         },
+        image: {
+          display: 'block',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          height:'50%',
+          width: '50%',
+          // height: 350,
+          borderRadius: '50%',
+          border:'solid'
+          
+        }
         
     }
+    const image = process.env.PUBLIC_URL + '/profile.png'
     return (
       <Container>
         <section>
@@ -25,6 +40,7 @@ export default function Home () {
             <br></br>
             Feel free to send enquires through the Contact tab.
           </p>
+          <img className="m-auto" style={styles.image} src={image} alt="profile"></img>
         </section>
       </Container>
     );

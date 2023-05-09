@@ -16,7 +16,7 @@ export default function Projects () {
         },
         title: {
             textAlign: 'center',
-            
+            borderBottom: 'solid',
             
             fontSize: 30
         },
@@ -34,7 +34,7 @@ export default function Projects () {
 
     const cardData = [
         {
-            image: 'FetchEvent.png',
+            image: process.env.PUBLIC_URL + '/FetchEvent.png',
             title: 'Fetch Event',
             text: `The motivation behind this project is to work collaboratively to create an application that uses existing open
             server-side APIs to suggest live music events to attend based on the user's musical preference and location. This
@@ -43,7 +43,7 @@ export default function Projects () {
             fundamental coding skills.`
         },
         {
-            image: 'updatedUnifiedGG.png',
+            image: process.env.PUBLIC_URL + '/updatedUnifiedGG.png',
             title: 'UnifiedGG',
             text: `In today's digital age, gaming has become more than just a pastime; it's a social activity. However, finding like-minded gamers to play with can be a challenge. That's where our website comes in. Our platform is designed to connect gamers with others who share similar interests and playstyles, creating an inclusive community where players can find and join groups easily. By fostering a sense of belonging and teamwork, our website empowers gamers to enhance their gaming experience and build lasting relationships. We believe that by bringing people together through gaming, we can create a positive impact in the gaming community.`
         }

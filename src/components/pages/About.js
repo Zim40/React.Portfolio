@@ -4,16 +4,16 @@ import Container from 'react-bootstrap/Container'
 export default function About () {
     const styles = {
         title: {
-            paddingTop: 100,
-            paddingBottom: 100,
+          paddingTop: 100,
+            
             textAlign: 'center',
             fontSize: 30,
             borderBottom: 'solid'
         },
         text: {
-            fontSize: 20,
-            maxWidth: '75%',
-            textAlign: 'center'
+          textAlign: 'center',
+          fontSize: 20,
+          padding:20
         },
         
     }

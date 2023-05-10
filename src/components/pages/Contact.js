@@ -31,7 +31,8 @@ export default function ContactForm () {
     const [email, setEmail] = useState('');
     const [emailError, setEmailError] = useState('');
     const [message, setMessage] = useState('');
-
+    
+   
     const handleFirstNameChange = (e) => {
       setFirstName(e.target.value);
     };
@@ -52,13 +53,19 @@ export default function ContactForm () {
     }
     const handleSubmit = (e) => {
       e.preventDefault();
-      console.log('messageSent');
+      if(!firstName || !lastName || !email || !message){
+        alert('Please fill all input areas to send message.')
+      } else {
+        alert('Message Sent!')
+        console.log('messageSent');
       setFirstName('');
       setLastName('');
       setEmail('');
       setMessage('');
       e.target.reset();
-      alert('Message Sent!')
+      }
+      
+      
     }
     
 

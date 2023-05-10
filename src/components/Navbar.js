@@ -10,6 +10,7 @@ function NavTabs ({currentPage, handlePageChange}) {
   const styles = {
     navTabs: {
       fontSize: 30,
+      background: 'lightgrey',
     },
    
    
@@ -18,7 +19,7 @@ function NavTabs ({currentPage, handlePageChange}) {
     return (
       <Navbar  className="sticky-top" bg="darkgrey" expand="lg">
         <Container>
-          <Nav style={styles.navTabs} className="m-auto">
+          <Nav style={styles.navTabs} className="m-auto bg-">
             <Nav.Link
               onClick={() => handlePageChange("Home")}
               className={
@@ -56,7 +57,11 @@ function NavTabs ({currentPage, handlePageChange}) {
               Contact
             </Nav.Link>
           </Nav>
+        
+              
         </Container>
+    
+
       </Navbar>
     );
 };

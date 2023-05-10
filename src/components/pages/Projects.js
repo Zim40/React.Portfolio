@@ -7,25 +7,30 @@ import Row from 'react-bootstrap/Row';
 export default function Projects () {
 
     const style = {
-        projSection: {
-            paddingTop: 100,
-            paddingBottom: 50,
-            maxWidth: '75%',
-            textAlign: 'center'
+        // projSection: {
+        //   paddingTop: 100,
             
-        },
+        //   textAlign: 'center',
+        //   fontSize: 30,
+        //   // borderBottom: 'solid'
+            
+        // },
         title: {
-            textAlign: 'center',
-            borderBottom: 'solid',
+          paddingTop: 100,
             
-            fontSize: 30
+          textAlign: 'center',
+          fontSize: 30,
+          borderBottom: 'solid'
         },
         text: {
-            fontSize: 20
+          textAlign: 'center',
+          fontSize: 20,
+          padding:20
         },
         card: {
             height: 575,
             background: 'lightgrey',
+            paddingBottom: 60
             
             
         }
@@ -62,7 +67,7 @@ export default function Projects () {
         </section>
         <Row xs={1} md={2} className="g-4">
       {cardData.map((card, index) => (
-        <Col>
+        <Col >
           <Card style={style.card} key={index}>
             <Card.Img variant="top" src={card.image} />
             <Card.Body>

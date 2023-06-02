@@ -53,7 +53,7 @@ export default function Projects () {
             text: `In today's digital age, gaming has become more than just a pastime; it's a social activity. However, finding like-minded gamers to play with can be a challenge. That's where our website comes in. Our platform is designed to connect gamers with others who share similar interests and playstyles, creating an inclusive community where players can find and join groups easily. By fostering a sense of belonging and teamwork, our website empowers gamers to enhance their gaming experience and build lasting relationships. We believe that by bringing people together through gaming, we can create a positive impact in the gaming community.`
         },
         {
-          image: process.env.PUBLIC_URL + '/screenshot.png',
+          image: process.env.PUBLIC_URL + '/Screenshot.png',
           title: 'RuralTech: Admin Inventory',
           text: 'Living in a regional area there are many small businesses that operate out of farmers markets and some even from the living room, with this comes difficulty with keeping track of inventory and ultimately not having the tool to do so. With Rural Tech’s admin interface we open the door for those business owners to easily navigate inventory and sell their products online. '
         }

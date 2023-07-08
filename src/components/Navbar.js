@@ -8,18 +8,22 @@ import Nav from 'react-bootstrap/Nav';
 function NavTabs ({currentPage, handlePageChange}) {
 
   const styles = {
-    navTabs: {
-      fontSize: 30,
-      background: 'lightgrey',
-    },
-   
-   
-  }
+    
+      navTabs: {
+        fontSize: 40,
+        fontFamily: 'Tangerine, cursive',
+        
+      },
+      navContainer: {
+        float: "right",
+      },
+    
+  };
 
     return (
-      <Navbar  className="sticky-top" bg="darkgrey" expand="lg">
-        <Container>
-          <Nav style={styles.navTabs} className="m-auto bg-">
+      <Navbar style={styles.navContainer}  className="sticky-top" bg="darkgrey" expand="lg">
+        
+          <Nav style={styles.navTabs} className="">
             <Nav.Link
               onClick={() => handlePageChange("Home")}
               className={
@@ -59,7 +63,7 @@ function NavTabs ({currentPage, handlePageChange}) {
           </Nav>
         
               
-        </Container>
+       
     
 
       </Navbar>

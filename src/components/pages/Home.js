@@ -12,6 +12,7 @@ export default function Home() {
       paddingTop: 200,
       fontFamily: "Abril Fatface, cursive",
       textAlign: "center",
+      fontSize: 50,
     
     },
     image: {
@@ -35,12 +36,12 @@ export default function Home() {
         <p style={styles.text} className="my-auto welcomeText">
             My name is Michael Monaghan and I invite you to browse my portfolio.
           </p>
-        {/* <img
+        <img
           className="m-auto bioImg"
           style={styles.image}
           src={image}
           alt="profile"
-        ></img> */}
+        ></img>
       </section>
     </Container>
   );

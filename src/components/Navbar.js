@@ -21,8 +21,10 @@ function NavTabs ({currentPage, handlePageChange}) {
   };
 
     return (
-      <Navbar style={styles.navContainer}  className="sticky-top" bg="darkgrey" expand="lg">
-        
+      <Navbar style={styles.navContainer}   className="sticky-top bg-body-tertiary" bg="darkgrey" collapseOnSelect expand="lg">
+        <Container>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav style={styles.navTabs} className="">
             <Nav.Link
               onClick={() => handlePageChange("Home")}
@@ -61,7 +63,8 @@ function NavTabs ({currentPage, handlePageChange}) {
               Contact
             </Nav.Link>
           </Nav>
-        
+          </Navbar.Collapse>
+        </Container>
               
        
     

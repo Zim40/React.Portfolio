@@ -22,7 +22,8 @@ export default function ContactForm () {
         title: {
           textAlign: 'center',
           paddingTop: 100,
-          fontSize: 30
+          fontSize: 30,
+          fontFamily: "Abril Fatface, cursive",
         }
     };
 

@@ -9,7 +9,7 @@ export default function Home() {
       padding: 0,
     },
     title: {
-      paddingTop: 200,
+      paddingTop: 100,
       fontFamily: "Abril Fatface, cursive",
       textAlign: "center",
       fontSize: 50,

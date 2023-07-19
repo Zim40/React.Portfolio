@@ -4,12 +4,14 @@ import Container from 'react-bootstrap/Container'
 export default function Footer () {
     const styles = {
       images: {
-        maxHeight: 100,
-        maxWidth: 100,
+        maxHeight: 50,
+        maxWidth: 50,
         padding: 10,
         marginLeft: "auto",
         marginRight: "auto",
-        float: 'right'
+        float: 'right',
+        background: 'grey',
+        borderRadius: '60px'
       },
       footerStyle: {
         position: "fixed",

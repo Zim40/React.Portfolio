@@ -1,38 +1,5 @@
 body {
-  background-color: lightblue;
-}
-/* Welcome Title animation */
-@keyframes welcome {
-  from {
-    font-size: 100px;
-  }
-  to {
-    font-size: 180px;
-  }
+  background-color: white;
 }
 
-/* Welcome Text animation */
-/* @keyframes typing {
-  from {
-    width: 0;
-    visibility: visible;
-  }
-  to {
-    width: 100%;
-    visibility: visible;
-  }
-}
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-} */
-
-
-@media only screen and (max-width: 360px) {
-  .homeWelcome {
-    width: 100%;
-    
-    
-  }
-}
 

@@ -1,7 +1,7 @@
 {
   "name": "newportfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://Zim40.github.io/React.Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d main -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

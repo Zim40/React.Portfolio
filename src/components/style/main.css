@@ -2,4 +2,38 @@ body {
   background-color: white;
 }
 
+.home {
+  display: flex;
+  margin: 50px 0px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.home > img {
+  height: 600px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 1px 5px  12px;
+  padding: 5px;
+  
+}
+.home--Text {
+  width: 300px;
+  font-size: 19px;
+  margin-left: auto;
+}
+.home--title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.home--text {
+  width: 300px;
+}
+.home--content {
+  border-right: 2px solid darkgrey;
+  height: 600px;
+  padding: 50px;
+
+}
 

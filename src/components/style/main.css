@@ -1,7 +1,8 @@
+
 body {
   background-color: white;
 }
-
+/* <--------- HOME TAB ---------> */
 .home {
   display: flex;
   margin: 50px 0px;
@@ -20,11 +21,11 @@ body {
 }
 .home--Text {
   width: 300px;
-  font-size: 19px;
+  font-size: 17px;
   margin-left: auto;
 }
 .home--title {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
 }
 .home--text {
@@ -32,8 +33,9 @@ body {
 }
 .home--content {
   border-right: 2px solid darkgrey;
-  height: 600px;
+  height:400px;
   padding: 50px;
-
 }
+
+
 

@@ -1,42 +1,16 @@
-import React, {useState} from 'react';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Projects from './pages/Projects';
-import Navbar from './Navbar';
-import Home from './pages/Home';
-import Footer from './Footer'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header/Header";
 
-export default function PortfolioContainer () {
-
+export default function PortfolioContainer() {
   
+  return (
+    <div>
+      <Header />
 
-    const [currentPage, setPage] = useState('Home');
+      {/* Page Rendered from Header/Navbar */}
 
-    const renderPage = () => {
-        if(currentPage === 'Home') {
-            return <Home />
-        }
-        if(currentPage === 'About') {
-            return <About />
-        }
-        if(currentPage === 'Contact') {
-            return <Contact />
-        }
-        if(currentPage === 'Projects') {
-            return <Projects />
-        }
-    }
-    const handlePageChange = (page) => setPage(page);
-
-    return (
-      <div>
-        <Navbar
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-        />
-        
-        {renderPage()}
-        <Footer />
-      </div>
-    );
+      <Footer />
+    </div>
+  );
 }

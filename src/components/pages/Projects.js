@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-
 import Button from "react-bootstrap/Button";
+import cardData from "../../ProjectData";
 
 
 export default function Projects() {
@@ -19,26 +19,6 @@ export default function Projects() {
     }
   };
 
-  const cardData = [
-    {
-      image: process.env.PUBLIC_URL + "/FetchEvent.png",
-      title: "Fetch Event",
-      text: `For more information click the button below.`,
-      Url: 'https://github.com/Zim40/FetchEvent'
-    },
-    {
-      image: process.env.PUBLIC_URL + "/updatedUnifiedGG.png",
-      title: "UnifiedGG",
-      text: `For more information click the button below.`,
-      Url: ''
-    },
-    {
-      image: process.env.PUBLIC_URL + "/Screenshot.png",
-      title: "RuralTech: Admin Inventory",
-      text: "For more information click the button below. ",
-      Url: 'https://github.com/Zim40/RuralTech-Ecommerce-'
-    },
-  ];
   return (
     <Container>
        <div style={style.title} className="p-title">

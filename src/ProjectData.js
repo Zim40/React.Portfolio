@@ -17,5 +17,11 @@ const cardData = [
     text: "For more information click the button below. ",
     Url: "https://github.com/Zim40/RuralTech-Ecommerce-",
   },
+  {
+    image: process.env.PUBLIC_URL + "/wordleApp.png",
+    title: "Wordle Replica",
+    text: "For more information click the button below. ",
+    Url: "https://github.com/Zim40/Wordle-Replica",
+  },
 ];
 export default cardData;

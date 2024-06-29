@@ -6,36 +6,30 @@ import cardData from "../../ProjectData";
 
 
 export default function Projects() {
-  const style = {
-    title: {
-      paddingTop: 100,
-      textAlign: 'center',
-      fontFamily: "Abril Fatface, cursive",
-      borderBottom: 'solid'
-    },
-    btn: {
-      justifyContent: 'center',
-      display: 'flex'
-    }
-  };
+// const formatTech = (index) => {
+//   const data = cardData.technology[index];
+//   return data.join(" + ")
+  
+// }
+// formatTech();
 
   return (
-    <Container>
-       <div style={style.title} className="p-title">
-      <h1>Projects</h1>
-      </div>
+    <div className="mb-16 w-full flex flex-col items-center align-center justify-center font-mono">
+      
       {cardData.map((projects, index) => (
-        
-          <Card style={{ maxWidth: "18rem", display: 'inline-flex', margin: 10, background: 'grey' }} key={index}>
-            <Card.Img variant="top" src={projects.image} />
+        <div className="">
+          <Card key={index} className="bg-transparent  m-2">
+            <Card.Img className="opacity-60" variant="top" src={projects.image} />
             <Card.Body>
-              <Card.Title>{projects.title}</Card.Title>
-              <Card.Text>{projects.text}</Card.Text>
-              <Button style={style.btn} variant="success" href={projects.Url}>View Repository</Button>
+              <Card.Title className="text-white text-shadow-default font-semibold">{projects.title}</Card.Title>
+              
+              <Card.Text className="text-neutral-300"><span className="  text-shadow-default">{projects.technology.join(" + ")}</span></Card.Text>
+              <Card.Text className="text-neutral-400">{projects.text}</Card.Text>
+              <Button  variant="success" href={projects.Url}>View Repository</Button>
             </Card.Body>
           </Card>
-        
+        </div>
       ))}
-    </Container>
+    </div>
   );
 }

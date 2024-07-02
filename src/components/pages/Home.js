@@ -10,7 +10,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-col text-center w-full p-2 lg:w-[500px]">
           <p>
-            I am an Entry-level Full Stack Web Developer based in the Barossa
+           Entry-level Full Stack Web Developer based in the Barossa
             Valley with skills in:
           </p>
           <p>

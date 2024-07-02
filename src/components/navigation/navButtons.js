@@ -6,7 +6,7 @@ import { GrProjects } from "react-icons/gr";
 
 export default function NavButtons({ currentPage, handlePageChange }) {
   return (
-    <div className="fixed z-50 bg-[#232827] bottom-0 w-full text-3xl gap-10 flex h-12 items-center align-center text-white justify-center px-2 appearance-none lg:mb-40">
+    <div className="fixed z-50 bg-[#232827] bottom-0 w-full text-3xl gap-10 flex h-12 items-center align-center text-white justify-center px-2 appearance-none lg:top-0">
       <button
         onClick={() => handlePageChange("Home")}
         className={
@@ -37,18 +37,14 @@ export default function NavButtons({ currentPage, handlePageChange }) {
       >
         <GrProjects />
       </button>
-      <button
-        onClick={() => handlePageChange("Contact")}
-        className={
-          currentPage === "Contact"
-            ? "rounded  mx-2 text-red-600 p-2"
-            : "rounded  mx-2  p-2"
-        }
-      >
-        <MdEmail />
-      </button>
-     
-    
+      <a href="mailto:michaelm810129@gmail.com">
+        <button
+          // onClick={() => handlePageChange("Contact")}
+          className="rounded  mx-2 text-red-600 p-2"
+        >
+          <MdEmail />
+        </button>
+      </a>
     </div>
   );
 }

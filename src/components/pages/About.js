@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="flex justify-center overflow-hidden w-full h-screen">
       <div className="flex flex-col align-center items-center justify-center text-white font-mono">
-        <h1 className="text-4xl mb-10 font-bold text-shadow-default lg:text-6xl">
+        <h1 className="text-4xl mb-10 font-bold text-shadow-default tracking-widest lg:text-6xl">
           About
         </h1>
         <div className="flex flex-col text-center w-full p-2 lg:w-[500px]">

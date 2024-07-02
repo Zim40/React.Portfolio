@@ -16,6 +16,7 @@ export default function Projects() {
         <h1 className="mb-0 flex items-center justify-center tracking-widest  h-16 text-2xl font-mono text-white text-shadow-default font-bold lg:text-6xl ">
           Projects
         </h1>
+        
       </div>
       
       {cardData.map((projects, index) => (

@@ -28,14 +28,15 @@ export default function PortfolioContainer() {
 
   return (
     <div className="flex flex-col">
-      <NavButtons
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
+      
+        <NavButtons
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      
+
       {renderPage()}
       {/* Page Rendered from Header/Navbar */}
-
-      
     </div>
   );
 }

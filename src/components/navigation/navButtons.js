@@ -7,7 +7,8 @@ import { FaGithub } from "react-icons/fa";
 
 export default function NavButtons({ currentPage, handlePageChange }) {
   return (
-    <div className="fixed z-50 bg-[#232827] bottom-0 w-full text-3xl gap-2 flex h-12 items-center align-center text-white justify-center px-2 appearance-none lg:top-0 ">
+    <div className="fixed z-50 bg-[#232827] bottom-0 w-full text-3xl flex h-12 items-center align-center text-white justify-center  px-2 appearance-none lg:top-0 ">
+      <div className="justify-evenly w-full lg:w-1/2 flex justify-evenly">
       <button
         onClick={() => handlePageChange("Home")}
         className={
@@ -55,6 +56,7 @@ export default function NavButtons({ currentPage, handlePageChange }) {
           <FaGithub />
         </button>
       </a>
+      </div>
     </div>
   );
 }

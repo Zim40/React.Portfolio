@@ -10,7 +10,8 @@ export default function About() {
         </h1>
         <div className="flex flex-col text-center w-full p-2 lg:w-[500px]">
           <p className="">
-          Born in the UK and now a permanent resident of Australia, I have a diverse range of hobbies that keep me engaged and inspired. I enjoy reading fantasy novels, watching sports, gaming, and diving into fascinating topics. Alongside these interests, I have a deep passion for coding, which allows me to combine creativity and logic to solve problems and build innovative solutions.
+          Born in the UK and a permanent resident of Australia, I have a diverse range of hobbies that keep me engaged and inspired. I enjoy reading fantasy novels, watching sports, gaming, and diving into fascinating topics.</p>
+          <p> Alongside these interests, I have a deep passion for coding, which allows me to combine creativity and logic to solve problems and build innovative solutions.
           </p>
         </div>
       </div>

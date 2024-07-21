@@ -35,7 +35,7 @@ export default function Projects() {
               </Card.Text>
               <Card.Text className="text-neutral-400 text-xs">
                 <span className="font-bold">Status: </span>{" "}
-                {projects.completionStatus ? "Completed" : "On Going"}
+                <span className={projects.completionStatus === true ? "text-green-400" : "text-amber-400"}>{projects.completionStatus ? "Completed" : "On Going"}</span>
               </Card.Text>
 
               {/* <Card.Text className="text-neutral-400">

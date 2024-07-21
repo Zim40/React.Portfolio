@@ -1,5 +1,14 @@
 const cardData = [
   {
+    image: process.env.PUBLIC_URL + "/MovieReviewer.png",
+    title: "Movie Reviewer",
+    text: `For more information click the button below.`,
+    Url: "https://github.com/Zim40/movieReviewer",
+    deployedUrl: "https://secret-eyrie-67487-977068a16355.herokuapp.com/",
+    technology: ["Javascript", "TailwindCss", "MongoDB", "Mongoose", "React", "JWT", "Bcrypt", "Express", "Third Party Api's"],
+    completionStatus: false,
+  },
+  {
     image: process.env.PUBLIC_URL + "/FinanceApp.png",
     title: "Finance App",
     text: `For more information click the button below.`,
